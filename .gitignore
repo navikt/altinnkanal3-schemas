@@ -1,0 +1,16 @@
+# Intellij
+.idea/
+build/
+altinnkanal3/build/
+*.iml
+*.iws
+
+# Gradle
+.gradle/
+out/
+
+# Compiled class file
+*.class
+
+# Log file
+*.log

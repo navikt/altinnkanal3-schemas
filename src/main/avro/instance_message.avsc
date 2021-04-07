@@ -1,0 +1,31 @@
+{
+  "namespace": "no.nav.altinnkanal3.avro",
+  "type": "record",
+  "name": "InstanceMessage",
+  "fields": [
+    { "name": "callId", "type": "string", "default": "NONE" },
+    { "name": "archiveReference", "type": "string" },
+    { "name": "archiveTimeStamp", "type": "string" },
+    { "name": "appId", "type": "string" },
+    { "name": "instanceId", "type": "string" },
+    { "name": "reportee", "type": "string" },
+    { "name": "metadata", "type": {
+      "type" : "map", "values": "string"
+      }
+    },
+    { "name": "attachments", "type": {
+      "type": "array",
+      "items": {
+        "type": "record",
+        "name": "Attachment",
+        "fields": [
+          { "name": "filename", "type": "string" },
+          { "name": "dataType", "type": "string" },
+          { "name": "contentType", "type": "string" },
+          { "name": "data", "type": "bytes" }
+          ]
+        }
+      }
+    }
+  ]
+}
