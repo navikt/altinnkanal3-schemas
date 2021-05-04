@@ -13,6 +13,15 @@
       "type" : "map", "values": "string"
       }
     },
+    { "name": "message", "type": {
+        "type": "record",
+        "name": "File",
+        "fields": [
+          { "name": "contentType", "type": "string" },
+          { "name": "data", "type": "string" }
+        ]
+      }
+    },
     { "name": "attachments", "type": {
       "type": "array",
       "items": {
