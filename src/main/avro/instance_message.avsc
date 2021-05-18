@@ -17,8 +17,8 @@
         "type": "record",
         "name": "File",
         "fields": [
-          { "name": "contentType", "type": "string" },
-          { "name": "data", "type": "string" }
+          { "name": "contentType", "type": "string", "default": "" },
+          { "name": "data", "type": "string", "default": "" }
         ]
       }
     },
