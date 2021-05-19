@@ -20,7 +20,8 @@
           { "name": "contentType", "type": "string", "default": "" },
           { "name": "data", "type": "string", "default": "" }
         ]
-      }
+      },
+      "default": {}
     },
     { "name": "attachments", "type": {
       "type": "array",
