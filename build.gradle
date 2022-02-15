@@ -65,25 +65,28 @@ publishing {
         }
     }
     publications {
-        mavenJava(MavenPublication) {
-            pom {
-                name.set("altinnkanal3-schemas")
-                description.set("Topic skjema produsert av altinnkanal3")
-                url.set("https://github.com/navikt/altinnkanal3-schemas")
-                licenses {
-                    license {
-                        name.set("MIT License")
-                        url.set("https://opensource.org/licenses/MIT")
-                    }
-                }
-
-                scm {
-                    connection.set("scm:git:https://github.com/navikt/altinnkanal3-schemas.git")
-                    developerConnection.set("scm:git:https://github.com/navikt/altinnkanal3-schemas.git")
-                    url.set("https://github.com/navikt/altinnkanal3-schemas")
-                }
-            }
-            from components.java
+        gpr(MavenPublication) {
+            from(components.java)
         }
+//        mavenJava(MavenPublication) {
+//            pom {
+//                name.set("altinnkanal3-schemas")
+//                description.set("Topic skjema produsert av altinnkanal3")
+//                url.set("https://github.com/navikt/altinnkanal3-schemas")
+//                licenses {
+//                    license {
+//                        name.set("MIT License")
+//                        url.set("https://opensource.org/licenses/MIT")
+//                    }
+//                }
+//
+//                scm {
+//                    connection.set("scm:git:https://github.com/navikt/altinnkanal3-schemas.git")
+//                    developerConnection.set("scm:git:https://github.com/navikt/altinnkanal3-schemas.git")
+//                    url.set("https://github.com/navikt/altinnkanal3-schemas")
+//                }
+//            }
+//            from components.java
+//        }
     }
 }
